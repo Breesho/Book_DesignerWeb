@@ -1,0 +1,390 @@
+@charset "utf-8";
+
+
+* {
+    box-sizing: border-box;
+}
+
+@orange:#f1720b;
+@marron:#421e09;
+
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+div, header, section, footer, aside, nav, main, article, figure, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+img, object, embed, canvas, video, audio, picture, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+.clear {
+	clear: both;
+}
+.center {
+width:960px;
+margin:0 auto ;
+}
+body {
+    
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+   text-align: center;
+}
+
+
+//-------------------------------------------------//Récurentes texte
+
+
+h1 , h2 {
+       
+        font-size: 45px;
+        line-height: 25px;
+        color:@orange;
+        
+    
+    
+}
+h4 {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    line-height: 30px;
+    
+    
+}
+h3 {
+    color: @orange;
+    font-size: 40px;
+}
+h6{
+    font-size: 20px;
+    line-height: 30px;
+    color: grey;
+    
+}
+//-------------------------------------------------//Fin
+//-------------------------------------------------//Récurentes boutons
+
+a.btn1 {
+     
+    font-size: 26px;
+    background-color:@marron;
+    padding: 10px 20px; 
+    text-decoration: none;
+    color: white;
+}
+a.btn2 {
+     
+    font-size: 18px;
+    background-color:@orange;
+     text-decoration: none;
+     padding: 5px 20px; 
+   
+    color: white;
+    
+}
+//-------------------------------------------------//Fin
+
+//-------------------------------------------------//Fin Récurentes 
+
+div.top {
+    
+    text-align: left;
+    a.logo {
+        display: inline-block;
+        margin: 10px;
+    }
+    nav.sociaux {
+        font-size:0px;
+         float: right;
+        
+        }
+        li {
+            font-size: 20px;
+            display: inline-block;
+           
+            
+            a {
+               margin:10px;
+                text-align: center;
+                display: block;
+                background-color: @marron;
+                color: white;
+                line-height: 40px;
+                width: 40px;
+                margin-top: 25px;
+                transition: all 1s;
+                border-bottom: solid 2px @orange;
+                 &:hover {
+                    border-bottom: solid 3px;
+                    color: white;
+                    background-color: grey;
+    }
+                }
+            }   
+        }
+    
+    
+
+
+
+section.navi {
+   background-color: @orange;
+    ul {
+        font-size: 0px;
+    }
+    li {
+        font-size: 20px;
+        margin:25px;
+    }
+    a {
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        width: 140px;
+        font-size: 20px;
+        color: white;
+        transition: all 1s;
+        border-bottom: solid 2px @orange;
+        margin-right: 10px;
+        
+      
+        
+        &:hover {
+                    border-bottom: solid 3px;
+                    color: white;
+                    background-color: grey;
+    }
+}
+}
+
+header {
+    background-image: url(../imgs/slider.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 200px 0 ;
+}
+
+section.sportsextremes {
+   padding-bottom: 70px;
+
+    article{
+        text-align: left;
+        padding: 25px;
+        width: 460px;
+        float: left;
+        margin: 10px;
+        margin-top: -50px;
+        border-top: solid 5px @orange;
+        background-size: cover;
+       
+        display: inline-block;
+        
+        &.sport1 {
+        background-image: url(../imgs/sport1.jpg);
+        
+            
+        }
+        &.sport2{ 
+        background-image: url(../imgs/sport2.jpg);
+  
+    }
+        
+        h4 {
+            height: 95px;
+            margin-bottom: 50px;
+        }
+
+    
+}
+ 
+    h1 {
+        margin-top: 70px;
+        margin-bottom: 30px;
+        display: inline-block;
+    }
+    h6 {
+        display: block;
+        line-height: 40px;
+    }
+    a.btn1 {
+        margin-top: 30px;
+        display: inline-block;
+        transition: all 1s;
+        &:hover {
+                    
+                    color: white;
+                    background-color: @orange;
+    }
+    }
+    a.btn2 {
+        margin-top: 30px;
+        display: inline-block;
+        transition: all 1s;
+        &:hover {
+                    
+                    color: white;
+                    background-color: @marron;
+    }
+    }
+    
+    
+    
+}
+
+section.running {
+    background-image: url(../imgs/running.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: left;
+    padding-bottom: 50px;
+    h5 {
+        color: white;
+        font-size: 47px;
+        padding-top: 40px;
+    }
+    h3 {
+        font-size: 130px;
+    }
+    a.btn1 {
+       float: left;
+        padding:10 30px;
+        transition: all 1s;
+         &:hover {
+                    
+                    color: white;
+                    background-color: @orange;
+    }
+    }
+    span {
+        font-weight: 300;
+    }
+}
+section.performance {
+  margin-top: 50px;
+    margin-bottom: 200px;
+    article {
+        float: left;
+        width: 460px;
+        margin: 10px;
+         height: 80px;
+    }
+    h2 {
+        padding-top: 50px;
+        font-size: 40px;
+    }
+    h6 {     
+    padding-top: 20px;
+        margin-bottom: 25px;
+}
+    
+    a.btn2 {
+        display: table-cell;
+        text-align: left;
+         transition: all 1s;
+         &:hover {
+                    
+                    color: white;
+                    background-color: @marron;
+    }
+    }
+    p {
+        text-align: left;
+        margin-bottom: 25px;
+        line-height: 30px;
+    }
+    
+}
+
+section.offres {
+    background-image: url(../imgs/moto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+   padding: 25px 0px ;
+    article {
+        float: left;
+        width: 300px;
+        margin: 10px;
+        background-color: darkgrey;
+         height: 350px;
+        text-align: left;
+        padding: 20px;
+    }
+    i {
+        font-size: 80px;
+        color :@orange;
+        margin-top: 50px;
+         margin-bottom: 20px;
+        
+    }
+    h6 {
+        color:black;
+        font-size: 27px;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    a.btn2 {
+        display: table-cell;
+        text-align: left;
+         transition: all 1s;
+         &:hover {
+                    
+                    color: white;
+                    background-color: @marron;
+    }
+    }
+}
+section.exploit {
+    margin-top:45px;
+    h2 {
+        margin-bottom: 25px;
+        line-height: 30px;
+     
+    }
+    .colonne {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-align: left;
+        columns: 2;
+        line-height: 30px;
+    }
+}
+
+footer {
+    background-color: #303030;
+    
+    padding: 30px 0;
+    color: white;
+    font-weight: 300;
+    
+    img {
+        
+        float: left;
+      
+    }
+    .mail {
+        margin-right: 300px;
+    }
+    ul {
+        text-align: left;
+        list-style-type: none;
+        line-height: 30px;
+        display: inline-block;
+        
+    }
+    h6 {
+        margin-top: 25px;
+        text-align: left;
+    }
+    span {
+        color: @orange;
+        font-weight: 700;
+    }
+}

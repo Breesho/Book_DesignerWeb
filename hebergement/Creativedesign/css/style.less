@@ -1,0 +1,620 @@
+@charset "utf-8";
+
+//-----LESS:    width: ~"calc(50% - 20px)";
+//-----CSS:    width: calc(50% - 20px);
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+
+div, header, nav, article, section, aside, footer, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img { 
+	margin: 0;
+	padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+html, body {
+	height: 100%;
+	border: 0 solid transparent;
+	font-size: 16px;
+	margin: 0;
+	min-height: 100%;
+	padding: 0;
+	width: 100%;
+	display: block;
+	font-family: 'Roboto', sans-serif;
+}
+
+img, object, embed, canvas, video, audio, picture, svg {
+	max-width: 100%;
+	height: auto;
+}
+img {
+    display: block;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/* ------------------------------- RECURENTES -- */
+//------ .clear pour LESS
+.clear {
+  display: block;
+  zoom: 1;
+  &:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+.center {
+    width: 960px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    flex-direction:row;
+    
+  
+}
+.flex2 {
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.btn1 {
+    padding: 20px;
+    border-radius: 15px;
+    border: solid 2px #758c7f;
+    color: #758c7f;
+    
+}
+
+/* ------------------------------- END RECURENTES -- */
+
+
+
+div.enveloppe {
+    
+    background-image: url(../imgs/bghaut.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 735px;
+    div.top {
+        border-bottom: solid 2px #758c7f;
+       padding-bottom:40px;
+    
+        padding-top: 45px;
+        figure {
+           margin-top: 25px;
+           background-repeat: no-repeat;
+           float: left;
+           width: 80x;
+           height: 28px;
+           
+        }
+        
+        
+    
+    nav {
+        text-align: right;
+        ul {
+            font-size: 0;
+          
+            li {
+                  display: inline-block;
+                padding: 25px;
+                a {
+                    color:#758c7f;
+                    font-size: 17px;
+                }
+            }
+        }
+        
+       } 
+    }
+    
+    header {
+        text-align: center;
+         color:#758c7f;
+        h2 {
+            padding-top: 110px;
+            font-size: 20px;
+            margin-bottom: 70px;
+            font-weight: 300;
+        }
+        h2:after {
+            content:'';
+            display: block;
+            height: 2px;
+            background-color: #758c7f;
+            width: 20%;
+            margin: 2% auto;
+        }
+        
+        
+        
+        h1 {
+            font-size: 40px;
+            position: relative;
+            font-weight: 400;
+            margin-bottom:40px;
+        }
+        
+        h1:before {
+                content: url(../imgs/picto.png) ;
+                position: absolute;
+                top: -40px;
+                left: 0;
+                right: 0;
+            }
+    }
+    
+}
+
+section.one {
+    padding-top:80px; 
+    article.gauche {
+        width: 25%;
+           padding-top: 20px;
+        
+        
+    }
+    article.gauche:before {
+            content:'';
+            display: block;
+            height: 2px;
+        
+            background-color: #758c7f;
+            width: 75%;
+            top:-30px;
+            left: 0;
+            position: relative;
+    } 
+    
+    article.gauche:after {
+            text-align: center;
+            content:'one';
+       
+            display: block;
+            border: solid 4px rgba(242, 227, 148, 0.76);
+            border-radius: 20px;
+            padding:30px 30px ;
+            top: -160px;
+            left:-30px; 
+            width: 10%;
+             position: relative;
+            
+   
+    } 
+    h3 {
+        font-size: 30px;
+    }
+    
+    article.droite{
+       
+        width: 75%;
+        p {
+            font-size: 18px;
+            
+            line-height: 34px;
+            color: #758c7f;
+        }
+        h4 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 32px;
+            color: #758c7f;
+            
+           
+        }
+        h4:before {
+            content:url(../imgs/picto.png);
+            
+        }
+        
+    }
+    
+    
+}
+
+
+section.two {
+    padding-top:80px; 
+    article.gauche {
+        width: 30%;
+           padding-top: 20px;
+        
+        
+    }
+    article.gauche:before {
+            content:'';
+            display: block;
+            height: 2px;
+        
+            background-color: #758c7f;
+            width: 75%;
+            top:-30px;
+            left: 0;
+            position: relative;
+    } 
+    
+    article.gauche:after {
+            text-align: center;
+            content:'two';
+       
+            display: block;
+            border: solid 4px rgba(242, 227, 148, 0.76);
+            border-radius: 20px;
+            padding:30px 30px ;
+            top: -160px;
+            left:-30px; 
+            width: 10%;
+             position: relative;
+            
+   
+    } 
+    h3 {
+        font-size: 30px;
+    }
+   
+    article.droite {
+      
+        width: 75%;
+        figure {
+            width: 30%;
+            height: 175px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            &:nth-child(1){
+                background-image: url(../imgs/per1.jpg);
+                background-repeat: no-repeat;
+            }
+            &:nth-child(2){
+                background-image: url(../imgs/per2.jpg);
+                background-repeat: no-repeat;
+            } 
+            &:nth-child(3){
+                background-image: url(../imgs/per3.jpg);
+                background-repeat: no-repeat;
+            }
+            &:nth-child(4){
+                background-image: url(../imgs/per4.jpg);
+                background-repeat: no-repeat;
+            }
+            &:nth-child(5){
+                background-image: url(../imgs/per5.jpg);
+                background-repeat: no-repeat;
+            } 
+            &:nth-child(6){
+                background-image: url(../imgs/per6.jpg);
+                background-repeat: no-repeat;
+            }&:nth-child(7){
+                background-image: url(../imgs/per7.jpg);
+                background-repeat: no-repeat;
+            }
+            &:nth-child(8){
+                background-image: url(../imgs/per8.jpg);
+                background-repeat: no-repeat;
+            } 
+            &:nth-child(9){
+                background-image: url(../imgs/per9.jpg);
+                background-repeat: no-repeat;
+            } 
+            &:nth-child(10){
+                background-image: url(../imgs/per10.jpg);
+                background-repeat: no-repeat;
+            }
+            
+        }
+        figure:before {
+                content: url(../imgs/petitpicto.png);
+                  position: absolute;
+            right:0;
+            top:10px;
+                
+            }
+    }
+}
+
+
+
+
+section.three {
+    padding-top:80px; 
+    article.gauche {
+        width: 25%;
+           padding-top: 20px;
+        
+        
+    }
+    article.gauche:before {
+            content:'';
+            display: block;
+            height: 2px;
+        
+            background-color: #758c7f;
+            width: 75%;
+            top:-30px;
+            left: 0;
+            position: relative;
+    } 
+    
+    article.gauche:after {
+            text-align: center;
+            content:'three';
+       
+            display: block;
+            border: solid 4px rgba(242, 227, 148, 0.76);
+            border-radius: 20px;
+            padding:30px 30px ;
+            top: -160px;
+            left:-30px; 
+            width: 10%;
+             position: relative;
+            
+   
+    } 
+    h3 {
+        font-size: 30px;
+    }
+    
+    article.droite{
+       
+        width: 75%;
+        p {
+            font-size: 18px;
+            
+            line-height: 34px;
+            color: #758c7f;
+        }
+        figure {
+            background-image: url(../imgs/bosseurs.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 293px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+        
+    }
+    
+    
+}
+
+
+
+
+section.offres {
+    padding-top:80px;  
+    padding-bottom:100px; 
+    color: white;
+    
+    div.conteneur {
+        background-image: url(../imgs/bgartiicle.jpg);
+        background-repeat: no-repeat;
+        justify-content: space-around;
+    }
+    article {
+        margin-top: 130px;
+        width: 320px;
+        background-color: #693e52;
+       
+    }
+    h2 {
+         padding: 20px;
+        font-size: 20px;
+    }
+    h6 {
+         padding: 20px;
+        font-size: 128px;
+    }
+    h5 {
+         padding: 20px;
+        font-size: 26px;
+        margin-bottom: 20px;
+       
+    }
+    p {
+        padding: 20px;
+    }
+    h5:before {
+            content:'';
+            display: block;
+            height: 2px;
+        
+            background-color: white;
+            width: 50%;
+            bottom: -110px;
+            position: relative;
+    } 
+    figure {
+    
+        height: 199px;
+        
+        
+    }
+    article:nth-child(1) figure {
+            background-image: url(../imgs/homme.jpg);
+        }
+    article:nth-child(2) figure {
+            background-image: url(../imgs/biblio.jpg);
+        }
+}
+
+
+
+
+
+
+
+
+
+footer {
+    padding: 50px;
+     background-color: #758c7f;
+    color: white;
+    figure {
+        background-image: url(../imgs/logobas.png);
+        height: 50px;
+        background-repeat: no-repeat;
+        margin-bottom: 10px;
+    }
+    li {
+        list-style-type: none;
+        line-height: 36px;
+    }
+    strong {
+       
+    }
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+    div.enveloppe {
+        padding:20px;
+    }
+    .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    div.enveloppe div.top{
+        border:none;
+    }
+    section.one article.gauche {
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+    }
+     section.one article.droite {
+        padding: 20px;
+        width: 100%;
+       
+    }
+     section.two article.gauche {
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+    }
+     section.two article.droite {
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+         figure {
+             
+            display: block;
+            
+            width: 25%; 
+         }
+         
+       
+    }
+     section.three article.gauche {
+        padding: 20px;
+        width: 100%;
+       height: 150px;
+    }
+     section.three article.droite {
+        padding: 20px;
+        width: 100%;
+        
+       
+    }
+    div.enveloppe div.top figure {
+        display:;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+    section.two article.droite {
+        padding: 20px;
+        width: 100%;
+        
+         figure {
+             
+            display: block;
+            
+            width:40%; 
+         }
+}
+}
+
+@media screen and (max-width: 700px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+    section.two article.droite {
+        padding: 20px;
+        width: 100%;
+        
+         figure {
+             
+            display: block;
+            
+            width:20%; 
+         }
+}
+    div.enveloppe div.top figure {
+        float: none;
+    }
+    div.enveloppe div.top {
+        text-align: center;
+    }
+    div.enveloppe div.top nav {
+        text-align: center;
+    }
+    img {
+        display: inline-block;
+    }
+    div.enveloppe header h2 {
+        padding-top:30px;
+    }
+    div.enveloppe div.top nav ul {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .center {
+        width: 100%;
+        margin: 0;
+    }
+    div.enveloppe div.top nav ul li {
+        padding:15px;
+
+    }
+    
+    section.two article.droite {
+        padding: 20px;
+        width: 100%;
+        
+         figure {
+             
+            display: block;
+            
+            width:40%; 
+         }
+}
+    
+    
+}
